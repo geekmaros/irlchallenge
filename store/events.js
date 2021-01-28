@@ -18,7 +18,7 @@ export const actions = {
       .query({
         query: fetchUser,
         variables: {
-          username,
+          username: username || 'irlideas',
         },
       })
       .then((res) => {
